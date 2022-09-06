@@ -2,7 +2,7 @@
 
 ***
 
-![WhatAppOneTimeChat](https://raw.githubusercontent.com/Kong/insomnia/develop/screenshots/main.png)
+![WhatAppOneTimeChat](https://github.com/hijizaly/Fluttet_Whatsapponetime_chat-Opener/blob/main/assets/images/screenshot/whotc.png?raw=true)
 
 
 This is my first Flutter simple project:
