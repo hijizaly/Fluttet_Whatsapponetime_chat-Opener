@@ -4,7 +4,6 @@ import 'package:whatsapponetime_chat/widgets/main_inherited_widget.dart';
 
 class PhoneNumberInput extends StatefulWidget {
   final dynamic mainInheritedWidget;
-  // final Function urlLaucher;
 
   PhoneNumberInput({Key? key, required this.mainInheritedWidget}) : super(key: key);
   @override

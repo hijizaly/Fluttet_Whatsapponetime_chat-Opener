@@ -29,11 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
     // print(numberIsValid_);
     // print(inputedPhoneNumber);
     // print("samaki");
-    chatLaucher(numberIsValid_, inputtedPhoneNumber);
+    chatLauncher(numberIsValid_, inputtedPhoneNumber);
     return numberIsValid=numberIsValid_;
   }
   void manualChatLauncher(){
-      chatLaucher(numberIsValid, inputtedPhoneNumber);
+      chatLauncher(numberIsValid, inputtedPhoneNumber);
   }
 
 
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: IntroText(), ////introText HERE,
                         ),
                       ),
-                      // const Gap(2),
+
                       const SizedBox(height: 5),
                       // SizedBox(
                       // width: _devicesScreenSize.width / 1.0,
