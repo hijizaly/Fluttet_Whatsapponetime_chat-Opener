@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:whatsapponetime_chat/action/url_luncher.dart';
+import 'package:whatsapponetime_chat/constants/constants.dart';
 import 'package:whatsapponetime_chat/widgets/intro_text.dart';
 import 'package:whatsapponetime_chat/widgets/main_inherited_widget.dart';
 import 'package:whatsapponetime_chat/widgets/phone_number_input.dart';
@@ -22,6 +23,18 @@ class _HomeScreenState extends State<HomeScreen> {
   }
   late String inputtedPhoneNumber="";
   late bool numberIsValid=false;
+
+  get opacityValue {
+    if(Theme.of(context).primaryColor==Color(0xff000000)){
+      // print("/////to white");
+      return 0;
+    }else{
+      return 200;
+    }
+  }
+
+
+  // get opacityValuee => return 100;
   String phoneNumberChecker(PhoneNumber phoneNumber){
     return inputtedPhoneNumber=phoneNumber.toString();
   }
@@ -40,6 +53,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // print(opacityValue);
+     const double opV=opacityValue_;
+     print(opV);
+
+    if(Theme.of(context).primaryColor==Color(0xff000000)){
+      print("/////to white");
+      // opV=0;
+      // opacityValue_=0;
+      // setter opacityValue_=0;
+    }else{
+      // opV=190;
+    }
     return MainInheritedWidget(
       phoneNumberInputFuc: phoneNumberChecker,
       isValidNumber: numberIsValid,
@@ -59,6 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white38,
                       borderRadius: BorderRadius.circular(17),
                       image: const DecorationImage(
+                          opacity: opV,
                           image: AssetImage('assets/images/backgrounds/OG.png'),
                           repeat: ImageRepeat.repeat)),
                   child: Column(

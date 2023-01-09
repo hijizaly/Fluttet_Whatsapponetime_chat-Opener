@@ -14,10 +14,28 @@ class MyApp extends StatelessWidget {
       title: 'Whatsapp oneTime',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
-        primarySwatch: Colors.green,
-      ),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+          primaryColor: Colors.black,
+          // primaryColorBrightness: Brightness.light,
+          primaryColorDark: Colors.black,
+          canvasColor: Colors.white,
+          // fontFamily: ,
+
+          brightness: Brightness.light,
+          primarySwatch: Colors.green,
+          appBarTheme: AppBarTheme(brightness: Brightness.light)),
+      darkTheme: ThemeData(
+          primaryColor: Colors.white,
+          // primaryColorBrightness: Brightness.dark,
+          primaryColorLight: Colors.black,
+          primaryColorDark: Colors.black,
+          indicatorColor: Colors.white,
+          canvasColor: Colors.black,
+
+          // textColor:Colors.white,
+
+          brightness: Brightness.dark,
+          primarySwatch: Colors.green,
+          appBarTheme: AppBarTheme(brightness: Brightness.dark)),
       home: HomeScreen(),
     );
   }
